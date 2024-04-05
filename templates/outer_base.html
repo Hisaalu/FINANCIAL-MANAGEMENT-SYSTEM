@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block base_stylesheets %}
+    <style>
+        .jumbotron {
+            background-color: transparent;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+    {% block outer_base_stylesheets %}
+    {% endblock %}
+{% endblock %}
+
+{% block base_content %}
+    {% block outer_base_content %}{% endblock %}
+{% endblock %}
+
+{% block base_scripts %}
+    {% load static %}
+    {% block outer_base_scripts %}{% endblock %}
+{% endblock %}
